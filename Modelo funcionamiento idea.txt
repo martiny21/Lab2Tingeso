@@ -1,0 +1,49 @@
+Registro de nuevos usuarios
+
+	Entidades:
+
+	Usuario
+	Documento
+
+	Base de datos users
+
+Simulación de crédito:
+
+	Entidades:
+
+	Ninguna de momento
+
+	Base de datos no necesita
+
+Solicitud de Crédito:
+
+	Modelo:
+
+	Usuario
+
+	Entidades:
+
+	Solicitud
+
+Evaluación de crédito:
+
+	Modelos:
+
+	Usuario
+	solicitud
+	Documento
+	Cuenta de ahorro
+	Transaccion
+
+	Entidad:
+
+	Cuenta de ahorro
+
+Seguimiento de solicitudes:
+
+	Entidad:
+	
+	seguimiento:
+		
+
+
