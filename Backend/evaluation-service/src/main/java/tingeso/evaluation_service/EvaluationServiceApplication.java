@@ -1,13 +1,13 @@
-package com.tutorial.gatewayservice;
+package tingeso.evaluation_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GatewayServiceApplication {
+public class EvaluationServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GatewayServiceApplication.class, args);
+		SpringApplication.run(EvaluationServiceApplication.class, args);
 	}
 
 }

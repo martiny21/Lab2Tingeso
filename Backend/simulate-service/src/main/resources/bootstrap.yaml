@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: simulate-service
+    cloud:
+      config:
+        enabled: true
+        uri: http://config-service-service:8081

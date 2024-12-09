@@ -6,9 +6,9 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      default-zone: http://localhost:8761/eureka
+      default-zone: http://eureka-service-service:8761/eureka
   instance:
-    hostname: localhost
+    prefer-ip-address: true
 
 spring:
   cloud:
@@ -17,15 +17,11 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: student-service
-          uri: lb://student-service
+        - id: user-service
+          uri: lb://user-service
           predicates:
-            - Path=/student/**
-        - id: book-service
-          uri: lb://book-service
+            - Path=/user/**
+        - id: simulate-service
+          uri: lb://simulate-service
           predicates:
-            - Path=/book/**
-        - id: pet-service
-          uri: lb://pet-service
-          predicates:
-            - Path=/pet/**
+            - Path=/simulations/**
