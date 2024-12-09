@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:${SERVER_PORT:0}}
+  port: 8090
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/users
@@ -7,10 +7,10 @@ spring:
     password: N0fum4r4S.
     driver-class-name: com.mysql.jdbc.Driver
 eureka:
+  instance:
+    hostname: localhost
   client:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      default-zone: http://eureka-service-service:8761/eureka
-  instance:
-    preferIpAddress: true
+      defaultZone: http://localhost:8761/eureka
